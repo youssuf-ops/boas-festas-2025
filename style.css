@@ -1,0 +1,80 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.images {
+  text-align: center;
+  margin-bottom: 0; /* remove a margem para colar na secao de baixo */
+  padding: 10px 0; /* 60px 20px; */
+  background-image: url("tres.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.images img {
+  width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.mensagem {
+  /* Define a imagem do fundo */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("dois.jpg");
+  background-size: cover;
+  background-position: center;
+  /*  background-attachment: fixed; */
+
+  /* Altura e alinhamento */
+  min-height: auto; /* 400px; */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.conteudo {
+  max-width: 700px;
+}
+
+.conteudo h1 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.conteudo p:not(.assinatura):not(.obrigado) {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.conteudo p.obrigado {
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+p.assinatura {
+  display: block;
+  margin-top: -10px;
+  padding: 0;
+  font-family: "Caveat", cursive;
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
